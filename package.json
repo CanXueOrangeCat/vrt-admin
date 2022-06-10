@@ -8,11 +8,11 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "check-code": "tsc --noEmit",
-    "lint": "eslint --ext js,jsx,ts,tsx ."
+    "lint": "eslint --ext js,jsx,ts,tsx . && yarn check-code"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "npx eslint --fix"
+      "eslint --fix"
     ]
   },
   "dependencies": {
