@@ -6,18 +6,18 @@
 #### 下载包
 
 ```yarn
-  yarn install
+ yarn install
 ```
 
 #### 运行
 
 ```yarn
-  yarn dev
+ yarn dev
 ```
 
 #### 打包
 
 ```yarn
-  yarn build
+ yarn build
 ```
 
