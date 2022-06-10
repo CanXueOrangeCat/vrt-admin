@@ -1,0 +1,71 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": [
+      "react",
+      "react-hooks",
+      "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime",
+        "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "overrides": [
+        {
+            "files": ["*.d.ts"],
+            "rules": {
+                "import/no-duplicates": "off"
+            }
+        },
+        {
+            "files": ["scripts/**/*.*", "vite-plugins/**/*"],
+            "rules": {
+              "no-console": "off"
+            }
+          },
+          {
+            "files": ["*.test.ts", "*.test.js", "*.spec.ts", "*.spec.js"],
+            "rules": {
+              "no-unused-expressions": "off"
+            }
+          }
+    ],
+    "rules": {
+        "no-console": 2,
+        "semi": [2, "always"],//语句强制分号结尾
+        "quotes": [1, "single"],
+        // typescript
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "react/react-in-jsx-scope": "off",
+        "prettier/prettier": ["error",{"singleQuote": true}]
+    },
+    "settings": {
+      "react": {
+        "version": "detect"  // React version. "detect" automatically picks the version you have installed.
+        // You can also use `16.0`, `16.3`, etc, if you want to override the detected value.
+        // It will default to "latest" and warn if missing, and to "detect" in the future
+      }
+    }
+}
