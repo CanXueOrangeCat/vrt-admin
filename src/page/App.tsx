@@ -3,7 +3,7 @@ import { Button } from '@arco-design/web-react';
 function App() {
   return (
     <div className="App">
-      <header className="App-header bg-green-100">
+      <header className="App-headed">
         <Button type="primary">hello</Button>
       </header>
     </div>
