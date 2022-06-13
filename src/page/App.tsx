@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import logo from './logo.svg';
 import { Button } from '@arco-design/web-react';
 
 function App() {
