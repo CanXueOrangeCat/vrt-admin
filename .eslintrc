@@ -51,6 +51,7 @@
         "no-console": 2,
         "semi": [2, "always"],//语句强制分号结尾
         "quotes": [1, "single"],
+        "@typescript-eslint/no-unused-vars": "error",
         // typescript
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
