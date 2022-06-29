@@ -30,7 +30,7 @@ const PageLayout: React.FC = () => {
               src="//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/3ee5f13fb09879ecb5185e440cef6eb9.png~tplv-uwbnlip3yd-webp.webp"
             />
           </Avatar>
-          <span className="mr-6 ml-3">liwenhao.1314920</span>
+          <span className="mr-6 ml-3">CanXueOrangeCat</span>
         </div>
       </Header>
       <Layout>
