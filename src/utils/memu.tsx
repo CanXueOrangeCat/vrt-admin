@@ -1,6 +1,6 @@
 import { Link, Navigate, Route, Routes } from 'react-router-dom';
 import { Menu } from '@arco-design/web-react';
-import { notFoundRoute } from './router';
+import { loginPageRoute, notFoundRoute } from './router';
 
 const { Item: MenuItem, SubMenu } = Menu;
 
@@ -60,6 +60,11 @@ export const RoutesList: React.FC<{ lists: any[] }> = ({ lists }) => {
         key="/"
         path="/"
         element={<Navigate to={`/${routePrefix}/${lists[0].path}`} />}
+      />
+      <Route
+        key={loginPageRoute.path}
+        path="/login"
+        element={<loginPageRoute.component />}
       />
       <Route
         key={notFoundRoute.path}

@@ -90,3 +90,9 @@ export const notFoundRoute = {
   path: '404',
   component: loadable(() => import('@/page/404/index')),
 };
+
+export const loginPageRoute = {
+  title: 'login',
+  path: 'login',
+  component: loadable(() => import('@/page/Login/index')),
+};
